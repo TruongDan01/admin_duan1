@@ -39,6 +39,12 @@
     <!-- Dropzone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css">
 </head>
+<style>
+    .dz-clickable,
+    .dz-started {
+        text-align: center;
+    }
+</style>
 
 <body class="g-sidenav-show  bg-gray-100">
     <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 bg-slate-900 fixed-start " id="sidenav-main">
@@ -637,21 +643,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
     <script>
         Dropzone.autoDiscover = false;
+
         var myDropzone = new Dropzone("#my-dropzone", {
-            url: "/upload", // URL để gửi tệp đã chọn đến máy chủ
-            paramName: "file", // Tên của trường tệp trong yêu cầu POST
-            maxFilesize: 5, // Giới hạn dung lượng tệp (MB)
-            addRemoveLinks: true, // Hiển thị nút xóa cho từng tệp
-            dictRemoveFile: "Remove", // Chữ hoặc biểu tượng để xóa tệp
-            dictDefaultMessage: `<i class="fas fa-cloud-upload-alt"></i>Drop files here or click to upload`, // Tin nhắn mặc định
-            acceptedFiles: "image/*", // Loại tệp cho phép (trong trường hợp này, chỉ hình ảnh)
-            autoProcessQueue: false, // Tắt tự động tải lên
+            url: "/upload",
+            paramName: "file",
+            maxFilesize: 5,
+            addRemoveLinks: true,
+            dictRemoveFile: "Remove",
+            dictDefaultMessage: `<i class="fas fa-cloud-upload-alt"></i>Drop files here or click to upload`,
+            acceptedFiles: "image/*",
+            autoProcessQueue: true,
+            init: function () {
+                this.on("success", function (file, response) {
+                    var successElement = document.createElement("p");
+                    successElement.textContent = "Upload successful";
+                    file.previewElement.appendChild(successElement);
+
+                    // Áp dụng lớp CSS cho phần tử img
+                    var uploadedImage = file.previewElement.querySelector("img");
+                    uploadedImage.classList.add("dz-clickable");
+                    uploadedImage.classList.add("dz-started");
+
+                    console.log(response); // Log the server response for debugging
+                });
+
+                this.on("error", function (file, errorMessage) {
+                    console.log(errorMessage); // Log the error message for debugging
+                });
+            }
         });
 
-        // Xử lý sự kiện khi nút "Start Upload" được nhấn
         document.querySelector("#start-upload-button").addEventListener("click", function () {
             myDropzone.processQueue();
         });
+
+
     </script>
 
     <script>
