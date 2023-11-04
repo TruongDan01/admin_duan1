@@ -35,12 +35,14 @@
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/corporate-ui-dashboard.css?v=1.0.0" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/custom.css">
     <!-- Dropzone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css">
+    <!-- Qill js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
-<body class="g-sidenav-show  bg-gray-100">
+<body class="g-sidenav-show  bg-gray-100" id="form-view" data-view="form">
     <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 bg-slate-900 fixed-start " id="sidenav-main">
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
@@ -376,127 +378,237 @@
 
                 <div class="col-12">
 
-                    <form class="content" enctype="multipart/form-data">
+                    <form id="form" class="content" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-md-8">
-                                <div class="card">
-                                    <div class="card-header bg-primary">
-                                        <h4 class="card-title text-light">Thông tin sách</h4>
-                                        <p class="card-category text-light">Complete your edition</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-header bg-primary">
+                                                <h4 class="card-title text-light">Thông tin sách</h4>
+                                                <p class="card-category text-light">Complete your edition</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Tên sách</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i
+                                                                        class="fa-solid fa-book"></i></span>
+                                                                <input type="text" name="name" class="form-control"
+                                                                    placeholder="Nhập tên sách...">
+                                                            </div>
+                                                            <div class="form-message"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Mô tả ngắn</label>
+                                                            <div id="sort-editor" class="sort-editor"></div>
+                                                            <input type="hidden" class="form-control" id="sort_description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Mô tả chi tiết</label>
+                                                            <div id="long-editor" class="long-editor"></div>
+                                                            <input type="hidden" class="form-control" id="long_description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="" class="form-label">ISBN</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i class="fa-solid fa-barcode"></i></span>
+                                                                <input type="text" class="form-control" name="sku" id="sku-code" placeholder="Mã vạch sách...">
+                                                                <span class="input-group-text">
+                                                                    <div class="generate-sku-btn" onclick="generateSKU()">
+                                                                        Tạo mã
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="form-label">Số lượng</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i class="fa-solid fa-hashtag"></i></span>
+                                                                <input type="number" min="1" class="form-control" name="quantity" id="" placeholder="Số lượng sách...">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="form-label">Số trang</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i class="fa-regular fa-file"></i></span>
+                                                                <input type="number" min="1" class="form-control" name="number_pages" id="" placeholder="Số trang sách...">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="form-label">Kích thước</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i class="fa-solid fa-expand"></i></span>
+                                                                <input type="text" min="1" class="form-control" name="size" id="" placeholder="Kích thước sách...">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <label class="form-label">Tên sách</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text"><i
-                                                                class="fa-solid fa-book"></i></span>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Nhập tên sách...">
-                                                    </div>
-                                                </div>
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-header bg-primary">
+                                                <h4 class="card-title text-light">Giá</h4>
+                                                <p class="card-category text-light">Complete your edition</p>
                                             </div>
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label class="form-label">Danh mục</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <i class="fas fa-graduation-cap"></i>
-                                                        </span>
-                                                        <select class="form-select" name="category" id="category">
-                                                            <option value="" disabled selected>Chọn danh mục sách
-                                                            </option>
-                                                            <option value="book1">Sách 1</option>
-                                                            <option value="book2">Sách 2</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="form-label">First Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="form-label">Last Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="form-label">Address</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="form-label">City</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="form-label">Country</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="form-label">Postal Code</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <div class="form-group">
-                                                        <label class="form-label">About me</label>
-                                                        <textarea class="form-control" rows="5"></textarea>
-                                                    </div>
-                                                </div>
+                                            <div class="card-body">
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header bg-primary">
-                                        <h4 class="card-title text-light">Hình ảnh</h4>
-                                        <p class="card-category text-light">Complete your edition</p>
-                                    </div>
-                                    <div class="card-body">
-
-                                        <div class="dropzone" id="my-dropzone">
-                                            <div class="fallback">
-                                                <input name="file" type="file" multiple />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-header bg-primary">
+                                                <h4 class="card-title text-light">Hình ảnh</h4>
+                                                <p class="card-category text-light">Complete your edition</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="dropzone text-center" id="image-dropzone">
+                                                    <div class="fallback">
+                                                        <input name="image" type="file" />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-header bg-primary">
+                                                <h4 class="card-title text-light">Album ảnh</h4>
+                                                <p class="card-category text-light">Complete your edition</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="dropzone text-center" id="album-images-dropzone">
+                                                    <div class="fallback">
+                                                        <input name="album_images" type="file" multiple />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-header bg-primary">
+                                                <h4 class="card-title text-light">Danh mục sách</h4>
+                                                <p class="card-category text-light">Complete your edition</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Danh mục</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">
+                                                                    <i class="fas fa-graduation-cap"></i>
+                                                                </span>
+                                                                <select class="form-select" name="category"
+                                                                    id="category">
+                                                                    <option value="" disabled selected>Chọn danh mục
+                                                                        sách
+                                                                    </option>
+                                                                    <option value="book1">Sách 1</option>
+                                                                    <option value="book2">Sách 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="">+ Thêm danh mục mới</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-header bg-primary">
+                                                <h4 class="card-title text-light">Tác giả</h4>
+                                                <p class="card-category text-light">Complete your edition</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Tác giả</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i
+                                                                        class="fa-solid fa-feather"></i></span>
+                                                                <select class="form-select" name="category"
+                                                                    id="category">
+                                                                    <option value="" disabled selected>Chọn tác giả
+                                                                    </option>
+                                                                    <option value="book1">Sách 1</option>
+                                                                    <option value="book2">Sách 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <a href="">Thêm tác giả</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-header bg-primary">
+                                                <h4 class="card-title text-light">Nhà xuất bản</h4>
+                                                <p class="card-category text-light">Complete your edition</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Nhà xuất bản</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i
+                                                                        class="fa-solid fa-print"></i></span>
+                                                                <select class="form-select" name="category"
+                                                                    id="category">
+                                                                    <option value="" disabled selected>Chọn nhà xuất bản
+                                                                    </option>
+                                                                    <option value="book1">Sách 1</option>
+                                                                    <option value="book2">Sách 2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Ngày xuất bản</label>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text"><i
+                                                                        class="fa-solid fa-calendar-days"></i></span>
+                                                                <input type="date" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="">Thêm nhà xuất bản</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header bg-primary">
-                                        <h4 class="card-title text-light">Giá</h4>
-                                        <p class="card-category text-light">Complete your edition</p>
-                                    </div>
-                                    <div class="card-body">
 
-                                    </div>
-                                </div>
                             </div>
+
                         </div>
                         <button type="submit" class="btn btn-primary">Update Profile</button>
                         <div class="clearfix"></div>
@@ -630,27 +742,40 @@
         </div>
     </div>
     <!--   Core JS Files   -->
+    <script src="../assets/js/functions.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>
     <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+    <!-- validation -->
+    <script src="../assets/js/Validation.js"></script>
+    <!-- Main js -->
+    <script src="../assets/js/main.js"></script>
+
     <script>
         Dropzone.autoDiscover = false;
-        var myDropzone = new Dropzone("#my-dropzone", {
+        let myDropzone = new Dropzone("#image-dropzone", {
             url: "/upload", // URL để gửi tệp đã chọn đến máy chủ
-            paramName: "file", // Tên của trường tệp trong yêu cầu POST
+            paramName: "image", // Tên của trường tệp trong yêu cầu POST
             maxFilesize: 5, // Giới hạn dung lượng tệp (MB)
             addRemoveLinks: true, // Hiển thị nút xóa cho từng tệp
-            dictRemoveFile: "Remove", // Chữ hoặc biểu tượng để xóa tệp
-            dictDefaultMessage: `<i class="fas fa-cloud-upload-alt"></i>Drop files here or click to upload`, // Tin nhắn mặc định
+            dictRemoveFile: `<i class="fa-solid fa-circle-xmark"></i>`, // Chữ hoặc biểu tượng để xóa tệp
+            dictDefaultMessage: `<i class="fas fa-cloud-upload-alt"></i> Drop files here or click to upload`, // Tin nhắn mặc định
             acceptedFiles: "image/*", // Loại tệp cho phép (trong trường hợp này, chỉ hình ảnh)
             autoProcessQueue: false, // Tắt tự động tải lên
         });
 
-        // Xử lý sự kiện khi nút "Start Upload" được nhấn
-        document.querySelector("#start-upload-button").addEventListener("click", function () {
-            myDropzone.processQueue();
+        let albumImagesDropzone = new Dropzone('#album-images-dropzone', {
+            url: "/upload", // URL để gửi tệp đã chọn đến máy chủ
+            paramName: "album_images", // Tên của trường tệp trong yêu cầu POST
+            maxFilesize: 5, // Giới hạn dung lượng tệp (MB)
+            addRemoveLinks: true, // Hiển thị nút xóa cho từng tệp
+            dictRemoveFile: `<i class="fa-solid fa-circle-xmark"></i>`, // Chữ hoặc biểu tượng để xóa tệp
+            dictDefaultMessage: `<i class="fas fa-cloud-upload-alt"></i> Drop files here or click to upload`, // Tin nhắn mặc định
+            acceptedFiles: "image/*", // Loại tệp cho phép (trong trường hợp này, chỉ hình ảnh)
+            autoProcessQueue: false, // Tắt tự động tải lên
         });
     </script>
 
@@ -662,6 +787,43 @@
             }
             Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
         }
+    </script>
+
+    <script>
+        let myToolbar = [
+            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+            [{ 'font': [] }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+            [{ 'color': [] }, { 'background': [] }],
+            [{ 'align': [] }],
+            ['clean']
+        ];
+        var quillSortEditor = new Quill('#sort-editor', {
+            theme: 'snow',
+            modules: {
+                toolbar: myToolbar
+            },
+        });
+
+        var quillLongEditor = new Quill('#long-editor', {
+            theme: 'snow',
+            modules: {
+                toolbar: myToolbar
+            }
+        });
+
+        var form = document.querySelector('#form');
+        var sortDescriptionInput = document.getElementById('sort_description');
+        var longDescriptionInput = document.getElementById('long_description');
+
+        form.onsubmit = function () {
+            var sortDescription = quillSortEditor.root.innerHTML;
+            var longDescription = quillLongEditor.root.innerHTML;
+
+            sortDescriptionInput.value = sortDescription;
+            longDescriptionInput.value = longDescription;
+        };
     </script>
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
