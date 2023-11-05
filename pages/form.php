@@ -12,6 +12,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
+<?php var_dump($_FILES) ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -375,10 +376,9 @@
             </div>
 
             <div class="row">
-
                 <div class="col-12">
-
-                    <form id="form" class="content" enctype="multipart/form-data">
+                    <form method="post" id="form" class="content" enctype="multipart/form-data">
+                        <input type="file" name="image_2" id="">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="row">
@@ -406,14 +406,16 @@
                                                         <div class="form-group">
                                                             <label class="form-label">Mô tả ngắn</label>
                                                             <div id="sort-editor" class="sort-editor"></div>
-                                                            <input type="hidden" class="form-control" id="sort_description">
+                                                            <div class="input-group">
+                                                                <input type="hidden" name="sort-editor" class="form-control" id="sort_description">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label class="form-label">Mô tả chi tiết</label>
                                                             <div id="long-editor" class="long-editor"></div>
-                                                            <input type="hidden" class="form-control" id="long_description">
+                                                            <input type="hidden" name="long-editor" class="form-control" id="long_description">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
@@ -483,9 +485,12 @@
                                                 <p class="card-category text-light">Complete your edition</p>
                                             </div>
                                             <div class="card-body">
-                                                <div class="dropzone text-center" id="image-dropzone">
+                                                <div class="dropzone text-center form-group" id="image-dropzone">
                                                     <div class="fallback">
-                                                        <input name="image" type="file" />
+                                                        <div class="input-group">
+                                                            <input id="hidden-image-input" name="image" type="file"/>
+                                                        </div>
+                                                        <div class="form-message" id="image-error-message"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -498,10 +503,13 @@
                                                 <p class="card-category text-light">Complete your edition</p>
                                             </div>
                                             <div class="card-body">
-                                                <div class="dropzone text-center" id="album-images-dropzone">
-                                                    <div class="fallback">
-                                                        <input name="album_images" type="file" multiple />
+                                                <div class="form-group">
+                                                    <div class="dropzone text-center" id="album-images-dropzone">
+                                                        <div class="fallback">
+                                                            <input name="album_images" type="file" multiple />
+                                                        </div>
                                                     </div>
+                                                    <div class="form-message"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -751,8 +759,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
     <!-- validation -->
     <script src="../assets/js/Validation.js"></script>
-    <!-- Main js -->
-    <script src="../assets/js/main.js"></script>
 
     <script>
         Dropzone.autoDiscover = false;
@@ -817,7 +823,7 @@
         var sortDescriptionInput = document.getElementById('sort_description');
         var longDescriptionInput = document.getElementById('long_description');
 
-        form.onsubmit = function () {
+        form.onsbmit = function () {
             var sortDescription = quillSortEditor.root.innerHTML;
             var longDescription = quillLongEditor.root.innerHTML;
 
@@ -829,6 +835,8 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Corporate UI Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/corporate-ui-dashboard.min.js?v=1.0.0"></script>
+    <!-- Main js -->
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
