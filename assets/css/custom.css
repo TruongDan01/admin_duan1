@@ -1,3 +1,6 @@
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
+
 .navbar-vertical .navbar-nav .nav-link[data-bs-toggle="collapse"]:after,
 .navbar-vertical .navbar-nav .nav-link[data-bs-toggle="collapse"][aria-expanded="true"]:after {
     color: white;
@@ -11,33 +14,16 @@
     display: none;
 }
 
-.content .row div .card {
-    position: relative;
-    /* background-color: #202940; */
-    border: 0;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    border-radius: 6px;
-    /* color: #333333; */
-    width: 100%;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-clip: border-box;
-    border-radius: 0.25rem;
-    font-size: .875rem;
-}
 
-.content .row div .card .card-header {
+
+/* .content .row div .card .card-header {
     margin: 0px 15px 0;
     background: linear-gradient(60deg, #7b1fa2, #913f9e);
     border-radius: 5px;
     margin-top: -20px;
     padding: 15px;
     z-index: 3;
-}
+} */
 
 .dropzone {
     min-height: 0px;
@@ -68,7 +54,9 @@
     cursor: pointer;
 }
 
-.form-group.invalid .input-group input {
+.form-group.invalid .input-group input,
+.form-group.invalid .input-group select,
+.form-group.invalid .input-group textarea {
     border-color: #f33a58;
     animation: shake 0.1s;
 }
@@ -98,4 +86,16 @@
     100% {
         transform: translateX(0);
     }
+}
+
+.tab-content {
+    padding: 0;
+}
+
+.card-header {
+    border-radius: 0 !important;
+}
+
+.tab-error {
+    border: 1px solid red !important;
 }
