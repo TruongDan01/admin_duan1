@@ -38,6 +38,7 @@ function Validator(options) {
         if (errorMessage) {
             errorElement.innerText = errorMessage;
             getParent(inputElement, options.formGroupSelector).classList.add('invalid');
+            inputElement.classList.add('is-invalid');
         } else {
             errorElement.innerText = '';
             getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
