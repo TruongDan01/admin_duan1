@@ -99,3 +99,8 @@ body { height: 100%; }
 .tab-error {
     border: 1px solid red !important;
 }
+
+.input-group-text button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
