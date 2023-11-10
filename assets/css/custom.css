@@ -14,6 +14,17 @@ body { height: 100%; }
     display: none;
 }
 
+
+
+/* .content .row div .card .card-header {
+    margin: 0px 15px 0;
+    background: linear-gradient(60deg, #7b1fa2, #913f9e);
+    border-radius: 5px;
+    margin-top: -20px;
+    padding: 15px;
+    z-index: 3;
+} */
+
 .dropzone {
     min-height: 0px;
     border-radius: 5px;
@@ -43,10 +54,6 @@ body { height: 100%; }
     cursor: pointer;
 }
 
-select:hover {
-    cursor: pointer;
-}
-
 .form-group.invalid .input-group input,
 .form-group.invalid .input-group select,
 .form-group.invalid .input-group textarea {
@@ -56,11 +63,6 @@ select:hover {
 
 .form-group.invalid .form-message {
     color: #f33a58;
-    animation: shake 0.1s;
-}
-
-.form-group.invalid .input-group .input-group-text{
-    border-color: #f33a58;
     animation: shake 0.1s;
 }
 
@@ -96,9 +98,4 @@ select:hover {
 
 .tab-error {
     border: 1px solid red !important;
-}
-
-.input-group-text .btn-input-group {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
 }
