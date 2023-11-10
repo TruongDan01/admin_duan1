@@ -42,6 +42,8 @@ function Validator(options) {
         } else {
             errorElement.innerText = '';
             getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
+            inputElement.classList.remove('is-invalid');
+            // inputElement.classList.add('is-valid');
         }
 
         return !errorMessage;
@@ -49,8 +51,8 @@ function Validator(options) {
 
     // Lấy element của form cần validate
     var formElement = document.querySelector(options.form);
-    if (formElement) {
 
+    if (formElement) {
         formElement.onsubmit = function (e) {
             e.preventDefault();
 
@@ -166,7 +168,21 @@ function Validator(options) {
                     var errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
                     errorElement.innerText = '';
                     getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
+                    inputElement.classList.remove('is-invalid');
                 }
+            });
+        });
+    }
+
+    const modalElement = document.querySelector(options.modal);
+    if (modalElement) {
+        modalElement.addEventListener('hidden.bs.modal', () => {
+            options.rules.forEach((rule) => {
+                const inputElement = document.querySelector(rule.selector);
+                const errorElement = getParent(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
+                errorElement.innerText = '';
+                getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
+                inputElement.classList.remove('is-invalid');
             });
         });
     }
@@ -232,8 +248,12 @@ Validator.isDiscount = function (selector, getCost, message) {
             if (isNaN(value)) {
                 return '* Vui lòng nhập số !';
             }
-            if (value >= getCost()) {
-                return message || '* Giá giảm phải nhỏ hơn giá gốc !';
+            if (getCost()) {
+                if (value >= getCost()) {
+                    return message || '* Giá giảm phải nhỏ hơn giá gốc !';
+                }
+            } else {
+                // return '* Vui lòng nhập giá gốc!';
             }
         }
     }
