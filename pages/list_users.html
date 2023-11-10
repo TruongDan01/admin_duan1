@@ -148,9 +148,8 @@
         <div class="collapse navbar-collapse px-3  w-auto h-auto" id="sidenav-collapse-main">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#dashboardsExamples"
-                        class="nav-link text-white active opacity-10" aria-controls="dashboardsExamples" role="button"
-                        aria-expanded="true">
+                    <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link text-white opacity-9"
+                        aria-controls="dashboardsExamples" role="button" aria-expanded="false">
                         <div
                             class="icon icon-shape icon-sm border-radius-md text-center d-flex align-items-center justify-content-center">
                             <svg width="16px" height="16px" viewBox="0 0 20 20" fill="none"
@@ -168,11 +167,10 @@
                         </div>
                         <span class="nav-link-text ms-2">Dashboards</span>
                     </a>
-                    <div class="collapse  show " id="dashboardsExamples">
+                    <div class="collapse " id="dashboardsExamples">
                         <ul class="nav border-start ms-4">
-                            <li class="nav-item active">
-                                <a class="nav-link text-white active opacity-10 "
-                                    href="./pages/dashboards/default.html">
+                            <li class="nav-item ">
+                                <a class="nav-link text-white opacity-9 " href="./pages/dashboards/default.html">
                                     <span class="sidenav-mini-icon"> D </span>
                                     <span class="sidenav-normal"> Default </span>
                                 </a>
@@ -202,8 +200,8 @@
                     <h6 class=" p-3 pe-2 text-uppercase text-xs font-weight-bolder text-secondary">PAGES</h6>
                 </li>
                 <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link text-white opacity-9"
-                        aria-controls="pagesExamples" role="button" aria-expanded="false">
+                    <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link text-white active opacity-10"
+                        aria-controls="pagesExamples" role="button" aria-expanded="true">
                         <div
                             class="icon icon-shape icon-sm border-radius-md text-center d-flex align-items-center justify-content-center">
                             <svg width="16px" height="16px" viewBox="0 0 42 42" version="1.1"
@@ -228,7 +226,7 @@
                         </div>
                         <span class="nav-link-text ms-2">Pages</span>
                     </a>
-                    <div class="collapse " id="pagesExamples">
+                    <div class="collapse  show " id="pagesExamples">
                         <ul class="nav border-start ms-4">
                             <li class="nav-item ">
                                 <a class="nav-link text-white opacity-9 " data-bs-toggle="collapse" aria-expanded
@@ -263,15 +261,15 @@
                                 </div>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link text-white opacity-9 " data-bs-toggle="collapse" aria-expanded
-                                    href="#usersExample">
+                                <a class="nav-link text-white active opacity-10 " data-bs-toggle="collapse"
+                                    aria-expanded="true" href="#usersExample">
                                     <span class="sidenav-mini-icon"> U </span>
                                     <span class="sidenav-normal"> Users <b class="caret"></b></span>
                                 </a>
-                                <div class="collapse " id="usersExample">
+                                <div class="collapse show" id="usersExample">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link text-white opacity-9"
+                                            <a class="nav-link text-white active opacity-10"
                                                 href="./pages/pages/users/reports.html">
                                                 <span class="text-xs sidenav-mini-icon"> R </span>
                                                 <span class="sidenav-normal"> Reports </span>
@@ -1144,17 +1142,17 @@
     </aside>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 
-        <nav class=" px-0 mx-5 rounded shadow-none z-index-2 navbar navbar-main navbar-expand-lg" navbar-scroll="true"
-            id="navbarBlur">
+        <nav class=" navbar-on-header  px-0 mx-5 rounded shadow-none z-index-2 navbar navbar-main navbar-expand-lg"
+            navbar-scroll="true" id="navbarBlur">
             <div class="container px-2 py-1 min-w-100">
                 <nav aria-label="breadcrumb">
                     <ol class="px-0 pt-1 pb-0 mb-1 bg-transparent breadcrumb me-sm-6 me-5">
-                        <li class="text-sm breadcrumb-item"><a class="opacity-5 p-0 breadcrumb-text  text-dark "
+                        <li class="text-sm breadcrumb-item"><a class="opacity-5 p-0 breadcrumb-text  text-white "
                                 href="javascript:;">Dashboard</a></li>
-                        <li class="text-sm breadcrumb-item  breadcrumb-text  text-dark  active" aria-current="page">
-                            Default</li>
+                        <li class="text-sm breadcrumb-item  breadcrumb-text  text-white  active" aria-current="page">
+                            Reports</li>
                     </ol>
-                    <h6 class="mb-0 font-weight-bold breadcrumb-text  text-dark ">Default</h6>
+                    <h6 class="mb-0 font-weight-bold breadcrumb-text  text-white ">Reports</h6>
                 </nav>
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                     <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -1173,14 +1171,14 @@
                         <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                             <a href="javascript:;" class="p-0 nav-link" id="iconNavbarSidenav">
                                 <div class="sidenav-toggler-inner">
-                                    <i class=" bg-dark  sidenav-toggler-line"></i>
-                                    <i class=" bg-dark  sidenav-toggler-line"></i>
-                                    <i class=" bg-dark  sidenav-toggler-line"></i>
+                                    <i class=" bg-white  sidenav-toggler-line"></i>
+                                    <i class=" bg-white  sidenav-toggler-line"></i>
+                                    <i class=" bg-white  sidenav-toggler-line"></i>
                                 </div>
                             </a>
                         </li>
                         <li class="px-3 nav-item d-flex align-items-center">
-                            <a href="javascript:;" class="p-0 nav-link ">
+                            <a href="javascript:;" class="p-0 nav-link  text-white ">
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                                     class="cursor-pointer fixed-plugin-button-nav" viewBox="0 0 24 24"
                                     fill="currentColor">
@@ -1191,7 +1189,7 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown pe-2 d-flex align-items-center">
-                            <a href="javascript:;" class="p-0 nav-link " id="dropdownMenuButton"
+                            <a href="javascript:;" class="p-0 nav-link  text-white " id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                     fill="currentColor" class="cursor-pointers">
@@ -1294,726 +1292,445 @@
             </div>
         </nav>
 
+        <div class="top-0 bg-cover z-index-n1 min-height-100 max-height-200 h-25 position-absolute w-100 start-0 end-0"
+            style="background-image: url('./assets/img/header-blue-purple.jpg'); background-position: bottom;">
+        </div>
         <div class="px-5 py-4 container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mx-2 mb-3 d-md-flex align-items-center">
-                        <div class="mb-3 mb-md-0">
-                            <h3 class="mb-0 font-weight-bold">Chào, Noah</h3>
-                            <p class="mb-0">Đây là trang quản trị!</p>
-                        </div>
-                        <button type="button"
-                            class="mb-0 mb-2 btn btn-sm btn-white btn-icon d-flex align-items-center ms-md-auto mb-sm-0 me-2">
-                            <span class="btn-inner--icon">
-                                <span class="p-1 bg-success rounded-circle d-flex ms-auto me-2">
-                                    <span class="visually-hidden">New</span>
-                                </span>
-                            </span>
-                            <span class="btn-inner--text">Tin Nhắn</span>
-                        </button>
-                        <button type="button" class="mb-0 btn btn-sm btn-dark btn-icon d-flex align-items-center">
-                            <span class="btn-inner--icon">
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="d-block me-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+            <div class="mt-6 row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mb-4 card blur rounded-2">
+                        <div class="p-4 card-body">
+                            <div
+                                class="mb-3 text-center bg-white shadow-xs shadow icon icon-shape border-radius-md d-flex align-items-center justify-content-center">
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9 3.5C9 5.43299 7.43299 7 5.5 7C3.56701 7 2 5.43299 2 3.5C2 1.56701 3.56701 0 5.5 0C7.43299 0 9 1.56701 9 3.5Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M18 3.5C18 5.43299 16.4331 7 14.5 7C12.5669 7 11 5.43299 11 3.5C11 1.56701 12.5669 0 14.5 0C16.4331 0 18 1.56701 18 3.5Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M13.5245 15C13.5744 14.619 13.6002 14.2294 13.6002 13.8333C13.6002 11.9256 13.0021 10.1707 12 8.78062C12.7844 8.28408 13.6953 8 14.6668 8C17.6122 8 20 10.6117 20 13.8333V15H13.5245Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M5.5 8C8.53756 8 11 10.6117 11 13.8333V15H0V13.8333C0 10.6117 2.46244 8 5.5 8Z"
+                                        fill="#111827" />
                                 </svg>
-                            </span>
-                            <span class="btn-inner--text">Đồng Bộ Hóa</span>
-                        </button>
+                            </div>
+                            <p class="mb-1 text-sm">Người dùng đang hoạt động</p>
+                            <h3 class="mb-0 font-weight-bold">76,000
+                                <span class="text-base font-weight-semibold text-success"><svg class="mx-1 mb-2"
+                                        width="11" height="6" viewBox="0 0 11 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.91583 5.83036C10.0289 5.71726 10.0855 5.58333 10.0855 5.42857C10.0855 5.27381 10.0289 5.13988 9.91583 5.02679L5.91583 1.02679C5.80273 0.913691 5.6688 0.857143 5.51404 0.857143C5.35928 0.857143 5.22535 0.913691 5.11226 1.02679L1.11226 5.02679C0.999161 5.13988 0.942614 5.27381 0.942614 5.42857C0.942614 5.58333 0.999161 5.71726 1.11226 5.83036C1.22535 5.94345 1.35928 6 1.51404 6H9.51404C9.6688 6 9.80273 5.94345 9.91583 5.83036Z"
+                                            fill="#67C23A" />
+                                    </svg>3.5%</span>
+                            </h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <hr class="my-0">
-            <div class="row">
-                <div class="position-relative overflow-hidden">
-                    <div class="swiper mySwiper mt-4 mb-2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div>
-                                    <div
-                                        class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                                        <div class="full-background bg-cover"
-                                            style="background-image: url('./assets/img/img-2.jpg')"></div>
-                                        <div class="card-body text-start px-3 py-0 w-100">
-                                            <div class="row mt-12">
-                                                <div class="col-sm-3 mt-auto">
-                                                    <h4 class="text-dark font-weight-bolder">#1</h4>
-                                                    <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Name
-                                                    </p>
-                                                    <h5 class="text-dark font-weight-bolder">Secured</h5>
-                                                </div>
-                                                <div class="col-sm-3 ms-auto mt-auto">
-                                                    <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">
-                                                        Category</p>
-                                                    <h5 class="text-dark font-weight-bolder">Banking</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mb-4 card blur rounded-2">
+                        <div class="p-4 card-body">
+                            <div
+                                class="mb-3 text-center bg-white shadow-xs shadow icon icon-shape border-radius-md d-flex align-items-center justify-content-center">
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 0C1.11929 0 0 1.11929 0 2.5V7.5C0 8.88075 1.11929 10 2.5 10V4.5C2.5 3.39543 3.39543 2.5 4.5 2.5H15C15 1.11929 13.8807 0 12.5 0H2.5Z"
+                                        fill="#111827" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5 7.5C5 6.11929 6.11929 5 7.5 5H17.5C18.8807 5 20 6.11929 20 7.5V12.5C20 13.8807 18.8807 15 17.5 15H7.5C6.11929 15 5 13.8807 5 12.5V7.5ZM12.5 12.5C13.8807 12.5 15 11.3807 15 10C15 8.61925 13.8807 7.5 12.5 7.5C11.1193 7.5 10 8.61925 10 10C10 11.3807 11.1193 12.5 12.5 12.5Z"
+                                        fill="#111827" />
+                                </svg>
                             </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                                    <div class="full-background bg-cover"
-                                        style="background-image: url('./assets/img/img-1.jpg')"></div>
-                                    <div class="card-body text-start px-3 py-0 w-100">
-                                        <div class="row mt-12">
-                                            <div class="col-sm-3 mt-auto">
-                                                <h4 class="text-dark font-weight-bolder">#2</h4>
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Name</p>
-                                                <h5 class="text-dark font-weight-bolder">Cyber</h5>
-                                            </div>
-                                            <div class="col-sm-3 ms-auto mt-auto">
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Category
-                                                </p>
-                                                <h5 class="text-dark font-weight-bolder">Security</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                                    <div class="full-background bg-cover"
-                                        style="background-image: url('./assets/img/img-3.jpg')"></div>
-                                    <div class="card-body text-start px-3 py-0 w-100">
-                                        <div class="row mt-12">
-                                            <div class="col-sm-3 mt-auto">
-                                                <h4 class="text-dark font-weight-bolder">#3</h4>
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Name</p>
-                                                <h5 class="text-dark font-weight-bolder">Alpha</h5>
-                                            </div>
-                                            <div class="col-sm-3 ms-auto mt-auto">
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Category
-                                                </p>
-                                                <h5 class="text-dark font-weight-bolder">Blockchain</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                                    <div class="full-background bg-cover"
-                                        style="background-image: url('./assets/img/img-4.jpg')"></div>
-                                    <div class="card-body text-start px-3 py-0 w-100">
-                                        <div class="row mt-12">
-                                            <div class="col-sm-3 mt-auto">
-                                                <h4 class="text-dark font-weight-bolder">#4</h4>
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Name</p>
-                                                <h5 class="text-dark font-weight-bolder">Beta</h5>
-                                            </div>
-                                            <div class="col-sm-3 ms-auto mt-auto">
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Category
-                                                </p>
-                                                <h5 class="text-dark font-weight-bolder">Web3</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                                    <div class="full-background bg-cover"
-                                        style="background-image: url('./assets/img/img-5.jpg')"></div>
-                                    <div class="card-body text-start px-3 py-0 w-100">
-                                        <div class="row mt-12">
-                                            <div class="col-sm-3 mt-auto">
-                                                <h4 class="text-dark font-weight-bolder">#5</h4>
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Name</p>
-                                                <h5 class="text-dark font-weight-bolder">Gama</h5>
-                                            </div>
-                                            <div class="col-sm-3 ms-auto mt-auto">
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Category
-                                                </p>
-                                                <h5 class="text-dark font-weight-bolder">Design</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
-                                    <div class="full-background bg-cover"
-                                        style="background-image: url('./assets/img/img-1.jpg')"></div>
-                                    <div class="card-body text-start px-3 py-0 w-100">
-                                        <div class="row mt-12">
-                                            <div class="col-sm-3 mt-auto">
-                                                <h4 class="text-dark font-weight-bolder">#6</h4>
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Name</p>
-                                                <h5 class="text-dark font-weight-bolder">Rompro</h5>
-                                            </div>
-                                            <div class="col-sm-3 ms-auto mt-auto">
-                                                <p class="text-dark opacity-6 text-xs font-weight-bolder mb-0">Category
-                                                </p>
-                                                <h5 class="text-dark font-weight-bolder">Security</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="mb-1 text-sm">Mua Hàng</p>
+                            <h3 class="mb-0 font-weight-bold">4,802
+                                <span class="text-base font-weight-semibold text-success"><svg class="mx-1 mb-2"
+                                        width="11" height="6" viewBox="0 0 11 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.91583 5.83036C10.0289 5.71726 10.0855 5.58333 10.0855 5.42857C10.0855 5.27381 10.0289 5.13988 9.91583 5.02679L5.91583 1.02679C5.80273 0.913691 5.6688 0.857143 5.51404 0.857143C5.35928 0.857143 5.22535 0.913691 5.11226 1.02679L1.11226 5.02679C0.999161 5.13988 0.942614 5.27381 0.942614 5.42857C0.942614 5.58333 0.999161 5.71726 1.11226 5.83036C1.22535 5.94345 1.35928 6 1.51404 6H9.51404C9.6688 6 9.80273 5.94345 9.91583 5.83036Z"
+                                            fill="#67C23A" />
+                                    </svg>1.3%</span>
+                            </h3>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mb-4 card blur rounded-2">
+                        <div class="p-4 card-body">
+                            <div
+                                class="mb-3 text-center bg-white shadow-xs shadow icon icon-shape border-radius-md d-flex align-items-center justify-content-center">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.14284 0C8.51164 0 7.99998 0.51168 7.99998 1.14286C7.99998 1.77403 8.51164 2.28571 9.14284 2.28571H12.098L4.90614 9.4776C4.45983 9.92389 4.45983 10.6475 4.90614 11.0938C5.35246 11.5401 6.07607 11.5401 6.52239 11.0938L13.7143 3.90195V6.85714C13.7143 7.48832 14.2259 8 14.8571 8C15.4883 8 16 7.48832 16 6.85714V1.14286C16 0.51168 15.4883 0 14.8571 0H9.14284Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M2.28571 2.28571C1.02335 2.28571 0 3.30905 0 4.57142V13.7143C0 14.9767 1.02335 16 2.28571 16H11.4286C12.691 16 13.7143 14.9767 13.7143 13.7143V10.2857C13.7143 9.65451 13.2026 9.14285 12.5714 9.14285C11.9402 9.14285 11.4286 9.65451 11.4286 10.2857V13.7143H2.28571V4.57142H5.71429C6.34546 4.57142 6.85714 4.05974 6.85714 3.42856C6.85714 2.79739 6.34546 2.28571 5.71429 2.28571H2.28571Z"
+                                        fill="#111827" />
+                                </svg>
+                            </div>
+                            <p class="mb-1 text-sm">Đánh Giá</p>
+                            <h3 class="mb-0 font-weight-bold">1.8%
+                                <span class="text-base font-weight-semibold text-success"><svg class="mx-1 mb-2"
+                                        width="11" height="6" viewBox="0 0 11 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.91583 5.83036C10.0289 5.71726 10.0855 5.58333 10.0855 5.42857C10.0855 5.27381 10.0289 5.13988 9.91583 5.02679L5.91583 1.02679C5.80273 0.913691 5.6688 0.857143 5.51404 0.857143C5.35928 0.857143 5.22535 0.913691 5.11226 1.02679L1.11226 5.02679C0.999161 5.13988 0.942614 5.27381 0.942614 5.42857C0.942614 5.58333 0.999161 5.71726 1.11226 5.83036C1.22535 5.94345 1.35928 6 1.51404 6H9.51404C9.6688 6 9.80273 5.94345 9.91583 5.83036Z"
+                                            fill="#67C23A" />
+                                    </svg>33.1%</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="mb-4 card blur rounded-2">
+                        <div class="p-4 card-body">
+                            <div
+                                class="mb-3 text-center bg-white shadow-xs shadow icon icon-shape border-radius-md d-flex align-items-center justify-content-center">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.17479 0.697371C5.04034 0.195608 4.52458 -0.102171 4.02282 0.0322857C3.52104 0.166733 3.22328 0.682491 3.35772 1.18425L3.60116 2.09279C3.73561 2.59455 4.25137 2.89233 4.75313 2.75788C5.2549 2.62343 5.55267 2.10767 5.41823 1.60591L5.17479 0.697371Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M1.18425 3.35772C0.682491 3.22328 0.166733 3.52104 0.0322857 4.02282C-0.102171 4.52458 0.195608 5.04034 0.697371 5.17479L1.60591 5.41823C2.10767 5.55267 2.62343 5.2549 2.75788 4.75313C2.89233 4.25137 2.59455 3.73561 2.09279 3.60116L1.18425 3.35772Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M9.47405 2.82314C9.84135 2.45582 9.84135 1.86027 9.47405 1.49296C9.10666 1.12564 8.51117 1.12564 8.14383 1.49296L7.47873 2.15805C7.11142 2.52537 7.11142 3.12092 7.47873 3.48823C7.84606 3.85555 8.44157 3.85555 8.80896 3.48823L9.47405 2.82314Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M2.82308 9.47405L3.48817 8.80896C3.85549 8.44157 3.85549 7.84606 3.48817 7.47873C3.12085 7.11142 2.52531 7.11142 2.15799 7.47873L1.49289 8.14383C1.12558 8.51117 1.12558 9.10666 1.49289 9.47405C1.86021 9.84135 2.45576 9.84135 2.82308 9.47405Z"
+                                        fill="#111827" />
+                                    <path
+                                        d="M5.83291 4.61021C5.48355 4.47047 5.08454 4.55237 4.81849 4.81843C4.55243 5.08448 4.47053 5.4835 4.61027 5.83284L8.37265 15.2387C8.51016 15.5826 8.83673 15.8138 9.20685 15.8291C9.57687 15.8445 9.9215 15.6412 10.0872 15.31L11.3848 12.7149L14.2243 15.5544C14.5916 15.9217 15.1872 15.9217 15.5545 15.5544C15.9219 15.1871 15.9219 14.5916 15.5545 14.2243L12.7149 11.3846L15.31 10.0871C15.6414 9.92147 15.8445 9.57684 15.8292 9.20672C15.8138 8.8367 15.5826 8.51013 15.2387 8.37252L5.83291 4.61021Z"
+                                        fill="#111827" />
+                                </svg>
+                            </div>
+                            <p class="mb-1 text-sm">Nhấp vào sự kiện</p>
+                            <h3 class="mb-0 font-weight-bold">2,399</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="my-4 row">
-                <div class="mb-4 col-lg-4 col-md-6 mb-md-0">
-                    <div class="card shadow-xs border h-100">
-                        <div class="card-header border-0 pb-0">
-                            <h6 class="font-weight-semibold text-lg mb-0">Số dư theo thời gian</h6>
-                            <p class="text-sm">Ở đây bạn có thông tin chi tiết về số dư.</p>
-                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                    checked>
-                                <label class="btn btn-white px-3 mb-0" for="btnradio1">12 months</label>
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-white px-3 mb-0" for="btnradio2">30 days</label>
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-white px-3 mb-0" for="btnradio3">7 days</label>
-                            </div>
-                        </div>
-                        <div class="card-body py-3">
-                            <div class="chart mb-2">
-                                <canvas id="chart-bars" class="chart-canvas" height="240"></canvas>
-                            </div>
-                            <button class="btn btn-white mb-0 ms-auto">Xem Báo Cáo</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="border shadow-xs card">
-                        <div class="pb-0 card-header border-bottom">
-                            <div class="mb-3 d-sm-flex align-items-center">
-                                <div>
-                                    <h6 class="mb-0 text-lg font-weight-semibold">Giao dịch gần đây</h6>
-                                    <p class="mb-2 text-sm mb-sm-0">Đây là thông tin chi tiết về các giao dịch cuối cùng
-                                    </p>
+                <div class="col-12">
+                    <div class="card z-index-2">
+                        <div class="p-3 pb-0 card-header">
+                            <div class="flex-row justify-content-between d-flex">
+                                <div class="my-auto">
+                                    <h6 class="text-lg font-weight-semibold">Các trang hàng đầu</h6>
+                                    <p>Tìm các thiết bị hàng đầu của bạn là gì.</p>
                                 </div>
-                                <div class="ms-auto d-flex">
-                                    <button type="button" class="mb-0 btn btn-sm btn-white me-2">
-                                        Xem Báo Cáo
-                                    </button>
-                                    <button type="button"
-                                        class="mb-0 btn btn-sm btn-dark btn-icon d-flex align-items-center">
-                                        <span class="btn-inner--icon">
-                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                                class="d-block me-2">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                            </svg>
-                                        </span>
-                                        <span class="btn-inner--text">Tải Xuống</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="pb-3 d-sm-flex align-items-center">
-                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="btnradiotable" id="btnradiotable1"
-                                        autocomplete="off" checked>
-                                    <label class="px-3 mb-0 btn btn-white" for="btnradiotable1">Tất Cả</label>
-                                    <input type="radio" class="btn-check" name="btnradiotable" id="btnradiotable2"
-                                        autocomplete="off">
-                                    <label class="px-3 mb-0 btn btn-white" for="btnradiotable2">Đã Theo Dõi</label>
-                                    <input type="radio" class="btn-check" name="btnradiotable" id="btnradiotable3"
-                                        autocomplete="off">
-                                    <label class="px-3 mb-0 btn btn-white" for="btnradiotable3">Không Được Giám
-                                        Sát</label>
-                                </div>
-                                <div class="input-group w-sm-25 ms-auto">
-                                    <span class="input-group-text text-body">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <input type="text" class="form-control" placeholder="Search">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-0 py-0 card-body">
-                            <div class="p-0 table-responsive">
-                                <table class="table mb-0 align-items-center justify-content-center">
-                                    <thead class="bg-gray-100">
-                                        <tr>
-                                            <th class="text-xs text-secondary font-weight-semibold opacity-7">
-                                                Giao Dịch</th>
-                                            <th class="text-xs text-secondary font-weight-semibold opacity-7 ps-2">
-                                                Số Lượng</th>
-                                            <th class="text-xs text-secondary font-weight-semibold opacity-7 ps-2">Thời
-                                                Gian
-                                            </th>
-                                            <th class="text-xs text-secondary font-weight-semibold opacity-7 ps-2">
-                                                Tìa Khoản</th>
-                                            <th
-                                                class="text-xs text-center text-secondary font-weight-semibold opacity-7">
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="px-2 d-flex">
-                                                    <div class="my-2 bg-gray-100 avatar avatar-sm rounded-circle me-2">
-                                                        <img src="./assets/img/small-logos/logo-spotify.svg"
-                                                            class="w-80" alt="spotify">
-                                                    </div>
-                                                    <div class="my-auto">
-                                                        <h6 class="mb-0 text-sm">Spotify</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p class="mb-0 text-sm font-weight-normal">$2,500</p>
-                                            </td>
-                                            <td>
-                                                <span class="text-sm font-weight-normal">Wed 3:00pm</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="d-flex">
-                                                    <div
-                                                        class="px-1 py-1 my-auto text-center border max-width-50 d-flex align-items-center border-radius-sm">
-                                                        <img src="./assets/img/logos/visa.png" class="mx-auto w-90"
-                                                            alt="visa">
-                                                    </div>
-                                                    <div class="ms-4">
-                                                        <p class="mb-0 text-sm text-dark">Visa 1234</p>
-                                                        <p class="mb-0 text-sm text-secondary">Expiry 06/2026</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a href="javascript:;" class="text-xs text-secondary font-weight-bold"
-                                                    data-bs-toggle="tooltip" data-bs-title="Edit user">
-                                                    <svg width="14" height="14" viewBox="0 0 15 16" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M11.2201 2.02495C10.8292 1.63482 10.196 1.63545 9.80585 2.02636C9.41572 2.41727 9.41635 3.05044 9.80726 3.44057L11.2201 2.02495ZM12.5572 6.18502C12.9481 6.57516 13.5813 6.57453 13.9714 6.18362C14.3615 5.79271 14.3609 5.15954 13.97 4.7694L12.5572 6.18502ZM11.6803 1.56839L12.3867 2.2762L12.3867 2.27619L11.6803 1.56839ZM14.4302 4.31284L15.1367 5.02065L15.1367 5.02064L14.4302 4.31284ZM3.72198 15V16C3.98686 16 4.24091 15.8949 4.42839 15.7078L3.72198 15ZM0.999756 15H-0.000244141C-0.000244141 15.5523 0.447471 16 0.999756 16L0.999756 15ZM0.999756 12.2279L0.293346 11.5201C0.105383 11.7077 -0.000244141 11.9624 -0.000244141 12.2279H0.999756ZM9.80726 3.44057L12.5572 6.18502L13.97 4.7694L11.2201 2.02495L9.80726 3.44057ZM12.3867 2.27619C12.7557 1.90794 13.3549 1.90794 13.7238 2.27619L15.1367 0.860593C13.9869 -0.286864 12.1236 -0.286864 10.9739 0.860593L12.3867 2.27619ZM13.7238 2.27619C14.0917 2.64337 14.0917 3.23787 13.7238 3.60504L15.1367 5.02064C16.2875 3.8721 16.2875 2.00913 15.1367 0.860593L13.7238 2.27619ZM13.7238 3.60504L3.01557 14.2922L4.42839 15.7078L15.1367 5.02065L13.7238 3.60504ZM3.72198 14H0.999756V16H3.72198V14ZM1.99976 15V12.2279H-0.000244141V15H1.99976ZM1.70617 12.9357L12.3867 2.2762L10.9739 0.86059L0.293346 11.5201L1.70617 12.9357Z"
-                                                            fill="#64748B" />
-                                                    </svg>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="px-2 d-flex">
-                                                    <div class="my-2 bg-gray-100 avatar avatar-sm rounded-circle me-2">
-                                                        <img src="./assets/img/small-logos/logo-invision.svg"
-                                                            class="w-80" alt="invision">
-                                                    </div>
-                                                    <div class="my-auto">
-                                                        <h6 class="mb-0 text-sm">Invision</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p class="mb-0 text-sm font-weight-normal">$5,000</p>
-                                            </td>
-                                            <td>
-                                                <span class="text-sm font-weight-normal">Wed 1:00pm</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="d-flex">
-                                                    <div
-                                                        class="px-1 py-1 my-auto text-center border max-width-50 d-flex align-items-center border-radius-sm">
-                                                        <img src="./assets/img/logos/mastercard.png"
-                                                            class="mx-auto w-90" alt="mastercard">
-                                                    </div>
-                                                    <div class="ms-4">
-                                                        <p class="mb-0 text-sm text-dark">Mastercard 1234</p>
-                                                        <p class="mb-0 text-sm text-secondary">Expiry 06/2026</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a href="javascript:;" class="text-xs text-secondary font-weight-bold"
-                                                    data-bs-toggle="tooltip" data-bs-title="Edit user">
-                                                    <svg width="14" height="14" viewBox="0 0 15 16" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M11.2201 2.02495C10.8292 1.63482 10.196 1.63545 9.80585 2.02636C9.41572 2.41727 9.41635 3.05044 9.80726 3.44057L11.2201 2.02495ZM12.5572 6.18502C12.9481 6.57516 13.5813 6.57453 13.9714 6.18362C14.3615 5.79271 14.3609 5.15954 13.97 4.7694L12.5572 6.18502ZM11.6803 1.56839L12.3867 2.2762L12.3867 2.27619L11.6803 1.56839ZM14.4302 4.31284L15.1367 5.02065L15.1367 5.02064L14.4302 4.31284ZM3.72198 15V16C3.98686 16 4.24091 15.8949 4.42839 15.7078L3.72198 15ZM0.999756 15H-0.000244141C-0.000244141 15.5523 0.447471 16 0.999756 16L0.999756 15ZM0.999756 12.2279L0.293346 11.5201C0.105383 11.7077 -0.000244141 11.9624 -0.000244141 12.2279H0.999756ZM9.80726 3.44057L12.5572 6.18502L13.97 4.7694L11.2201 2.02495L9.80726 3.44057ZM12.3867 2.27619C12.7557 1.90794 13.3549 1.90794 13.7238 2.27619L15.1367 0.860593C13.9869 -0.286864 12.1236 -0.286864 10.9739 0.860593L12.3867 2.27619ZM13.7238 2.27619C14.0917 2.64337 14.0917 3.23787 13.7238 3.60504L15.1367 5.02064C16.2875 3.8721 16.2875 2.00913 15.1367 0.860593L13.7238 2.27619ZM13.7238 3.60504L3.01557 14.2922L4.42839 15.7078L15.1367 5.02065L13.7238 3.60504ZM3.72198 14H0.999756V16H3.72198V14ZM1.99976 15V12.2279H-0.000244141V15H1.99976ZM1.70617 12.9357L12.3867 2.2762L10.9739 0.86059L0.293346 11.5201L1.70617 12.9357Z"
-                                                            fill="#64748B" />
-                                                    </svg>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="px-2 d-flex">
-                                                    <div class="my-2 bg-gray-100 avatar avatar-sm rounded-circle me-2">
-                                                        <img src="./assets/img/small-logos/logo-jira.svg" class="w-80"
-                                                            alt="jira">
-                                                    </div>
-                                                    <div class="my-auto">
-                                                        <h6 class="mb-0 text-sm">Jira</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p class="mb-0 text-sm font-weight-normal">$3,400</p>
-                                            </td>
-                                            <td>
-                                                <span class="text-sm font-weight-normal">Mon 7:40pm</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="d-flex">
-                                                    <div
-                                                        class="px-1 py-1 my-auto text-center border max-width-50 d-flex align-items-center border-radius-sm">
-                                                        <img src="./assets/img/logos/mastercard.png"
-                                                            class="mx-auto w-90" alt="mastercard">
-                                                    </div>
-                                                    <div class="ms-4">
-                                                        <p class="mb-0 text-sm text-dark">Mastercard 1234</p>
-                                                        <p class="mb-0 text-sm text-secondary">Expiry 06/2026</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a href="javascript:;" class="text-xs text-secondary font-weight-bold"
-                                                    data-bs-toggle="tooltip" data-bs-title="Edit user">
-                                                    <svg width="14" height="14" viewBox="0 0 15 16" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M11.2201 2.02495C10.8292 1.63482 10.196 1.63545 9.80585 2.02636C9.41572 2.41727 9.41635 3.05044 9.80726 3.44057L11.2201 2.02495ZM12.5572 6.18502C12.9481 6.57516 13.5813 6.57453 13.9714 6.18362C14.3615 5.79271 14.3609 5.15954 13.97 4.7694L12.5572 6.18502ZM11.6803 1.56839L12.3867 2.2762L12.3867 2.27619L11.6803 1.56839ZM14.4302 4.31284L15.1367 5.02065L15.1367 5.02064L14.4302 4.31284ZM3.72198 15V16C3.98686 16 4.24091 15.8949 4.42839 15.7078L3.72198 15ZM0.999756 15H-0.000244141C-0.000244141 15.5523 0.447471 16 0.999756 16L0.999756 15ZM0.999756 12.2279L0.293346 11.5201C0.105383 11.7077 -0.000244141 11.9624 -0.000244141 12.2279H0.999756ZM9.80726 3.44057L12.5572 6.18502L13.97 4.7694L11.2201 2.02495L9.80726 3.44057ZM12.3867 2.27619C12.7557 1.90794 13.3549 1.90794 13.7238 2.27619L15.1367 0.860593C13.9869 -0.286864 12.1236 -0.286864 10.9739 0.860593L12.3867 2.27619ZM13.7238 2.27619C14.0917 2.64337 14.0917 3.23787 13.7238 3.60504L15.1367 5.02064C16.2875 3.8721 16.2875 2.00913 15.1367 0.860593L13.7238 2.27619ZM13.7238 3.60504L3.01557 14.2922L4.42839 15.7078L15.1367 5.02065L13.7238 3.60504ZM3.72198 14H0.999756V16H3.72198V14ZM1.99976 15V12.2279H-0.000244141V15H1.99976ZM1.70617 12.9357L12.3867 2.2762L10.9739 0.86059L0.293346 11.5201L1.70617 12.9357Z"
-                                                            fill="#64748B" />
-                                                    </svg>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="px-2 d-flex">
-                                                    <div class="my-2 bg-gray-100 avatar avatar-sm rounded-circle me-2">
-                                                        <img src="./assets/img/small-logos/logo-slack.svg" class="w-80"
-                                                            alt="slack">
-                                                    </div>
-                                                    <div class="my-auto">
-                                                        <h6 class="mb-0 text-sm">Slack</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <p class="mb-0 text-sm font-weight-normal">$1,000</p>
-                                            </td>
-                                            <td>
-                                                <span class="text-sm font-weight-normal">Wed 5:00pm</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="d-flex">
-                                                    <div
-                                                        class="px-1 py-1 my-auto text-center border max-width-50 d-flex align-items-center border-radius-sm">
-                                                        <img src="./assets/img/logos/visa.png" class="mx-auto w-90"
-                                                            alt="visa">
-                                                    </div>
-                                                    <div class="ms-4">
-                                                        <p class="mb-0 text-sm text-dark">Visa 1234</p>
-                                                        <p class="mb-0 text-sm text-secondary">Expiry 06/2026</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a href="javascript:;" class="text-xs text-secondary font-weight-bold"
-                                                    data-bs-toggle="tooltip" data-bs-title="Edit user">
-                                                    <svg width="14" height="14" viewBox="0 0 15 16" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M11.2201 2.02495C10.8292 1.63482 10.196 1.63545 9.80585 2.02636C9.41572 2.41727 9.41635 3.05044 9.80726 3.44057L11.2201 2.02495ZM12.5572 6.18502C12.9481 6.57516 13.5813 6.57453 13.9714 6.18362C14.3615 5.79271 14.3609 5.15954 13.97 4.7694L12.5572 6.18502ZM11.6803 1.56839L12.3867 2.2762L12.3867 2.27619L11.6803 1.56839ZM14.4302 4.31284L15.1367 5.02065L15.1367 5.02064L14.4302 4.31284ZM3.72198 15V16C3.98686 16 4.24091 15.8949 4.42839 15.7078L3.72198 15ZM0.999756 15H-0.000244141C-0.000244141 15.5523 0.447471 16 0.999756 16L0.999756 15ZM0.999756 12.2279L0.293346 11.5201C0.105383 11.7077 -0.000244141 11.9624 -0.000244141 12.2279H0.999756ZM9.80726 3.44057L12.5572 6.18502L13.97 4.7694L11.2201 2.02495L9.80726 3.44057ZM12.3867 2.27619C12.7557 1.90794 13.3549 1.90794 13.7238 2.27619L15.1367 0.860593C13.9869 -0.286864 12.1236 -0.286864 10.9739 0.860593L12.3867 2.27619ZM13.7238 2.27619C14.0917 2.64337 14.0917 3.23787 13.7238 3.60504L15.1367 5.02064C16.2875 3.8721 16.2875 2.00913 15.1367 0.860593L13.7238 2.27619ZM13.7238 3.60504L3.01557 14.2922L4.42839 15.7078L15.1367 5.02065L13.7238 3.60504ZM3.72198 14H0.999756V16H3.72198V14ZM1.99976 15V12.2279H-0.000244141V15H1.99976ZM1.70617 12.9357L12.3867 2.2762L10.9739 0.86059L0.293346 11.5201L1.70617 12.9357Z"
-                                                            fill="#64748B" />
-                                                    </svg>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-xl-0">
-                    <div class="card border shadow-xs mb-4">
-                        <div class="card-body text-start p-3 w-100">
-                            <div
-                                class="icon icon-shape icon-sm bg-dark text-white text-center border-radius-sm d-flex align-items-center justify-content-center mb-3">
-                                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 4C2.89543 4 2 4.89543 2 6V7H18V6C18 4.89543 17.1046 4 16 4H4Z" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M18 9H2V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V9ZM4 13C4 12.4477 4.44772 12 5 12H6C6.55228 12 7 12.4477 7 13C7 13.5523 6.55228 14 6 14H5C4.44772 14 4 13.5523 4 13ZM9 12C8.44772 12 8 12.4477 8 13C8 13.5523 8.44772 14 9 14H10C10.5523 14 11 13.5523 11 13C11 12.4477 10.5523 12 10 12H9Z" />
-                                </svg>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="w-100">
-                                        <p class="text-sm text-secondary mb-1">Doanh Thu</p>
-                                        <h4 class="mb-2 font-weight-bold">$99,118.5</h4>
-                                        <div class="d-flex align-items-center">
-                                            <span class="text-sm text-success font-weight-semibold px-2">
-                                                <i class="fa fa-chevron-up text-xs me-1"></i>10.5%
-                                            </span>
-                                            <span class="text-sm ms-3">từ $89,740.00</span>
-                                        </div>
+                                <div class="my-auto align-self-end d-flex flex-nowrap">
+                                    <div class="btn-group" role="tablist">
+                                        <input class="btn-check active" type="radio" name="charttab" id="charttab1"
+                                            autocomplete="off" role="tab" aria-selected="true" checked>
+                                        <label class="px-4 mb-0 btn btn-white" for="charttab1">Top Pages</label>
+                                        <input class="btn-check active" type="radio" name="charttab" id="charttab2"
+                                            autocomplete="off" role="tab" aria-selected="false">
+                                        <label class="px-4 mb-0 btn btn-white" for="charttab2">Entry Pages</label>
+                                        <input class="btn-check active" type="radio" name="charttab" id="charttab3"
+                                            autocomplete="off" role="tab" aria-selected="false">
+                                        <label class="px-4 mb-0 btn btn-white" for="charttab3">Exit pages</label>
+                                    </div>
+                                    <div class="ms-2 dropdown">
+                                        <button class="mb-0 btn btn-white dropdown-toggle"
+                                            data-bs-toggle="dropdown">last 30 days </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownChart"
+                                            data-popper-placement="bottom-end">
+                                            <li><a class="dropdown-item" href="javascript:;">yesterday</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;">last 7 days</a></li>
+                                            <li><a class="dropdown-item" href="javascript:;">last 30 days</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-xl-0">
-                    <div class="card border shadow-xs mb-4">
-                        <div class="card-body text-start p-3 w-100">
-                            <div
-                                class="icon icon-shape icon-sm bg-dark text-white text-center border-radius-sm d-flex align-items-center justify-content-center mb-3">
-                                <svg width="17" height="16" viewBox="0 0 17 16" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M5.3001 4.80001V4.00001C5.3001 2.67453 6.37462 1.60001 7.7001 1.60001H9.3001C10.6256 1.60001 11.7001 2.67453 11.7001 4.00001V4.80001H13.3001C14.1838 4.80001 14.9001 5.51635 14.9001 6.40001V9.25665C12.9078 9.99577 10.752 10.3999 8.5001 10.3999C6.24821 10.3999 4.09239 9.99577 2.1001 9.25657V6.40001C2.1001 5.51635 2.81644 4.80001 3.7001 4.80001H5.3001ZM6.9001 4.00001C6.9001 3.55818 7.25827 3.20001 7.7001 3.20001H9.3001C9.74194 3.20001 10.1001 3.55818 10.1001 4.00001V4.80001H6.9001V4.00001ZM7.7001 8.00001C7.7001 7.55818 8.05827 7.20001 8.5001 7.20001H8.5081C8.94994 7.20001 9.3081 7.55818 9.3081 8.00001C9.3081 8.44185 8.94994 8.80001 8.5081 8.80001H8.5001C8.05827 8.80001 7.7001 8.44185 7.7001 8.00001Z" />
-                                    <path
-                                        d="M2.1001 10.9538V12.8C2.1001 13.6837 2.81644 14.4 3.7001 14.4H13.3001C14.1838 14.4 14.9001 13.6837 14.9001 12.8V10.9538C12.8899 11.6323 10.7372 11.9999 8.5001 11.9999C6.263 11.9999 4.11033 11.6323 2.1001 10.9538Z" />
-                                </svg>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="w-100">
-                                        <p class="text-sm text-secondary mb-1">Giao Dịch</p>
-                                        <h4 class="mb-2 font-weight-bold">376</h4>
-                                        <div class="d-flex align-items-center">
-                                            <span class="text-sm text-success font-weight-semibold px-2">
-                                                <i class="fa fa-chevron-up text-xs me-1"></i>55%
-                                            </span>
-                                            <span class="text-sm ms-3">từ 243</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-xl-0">
-                    <div class="card border shadow-xs mb-4">
-                        <div class="card-body text-start p-3 w-100">
-                            <div
-                                class="icon icon-shape icon-sm bg-dark text-white text-center border-radius-sm d-flex align-items-center justify-content-center mb-3">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.6001 8.8C1.6001 8.35816 1.95827 8 2.4001 8H4.0001C4.44192 8 4.8001 8.35816 4.8001 8.8V12.8C4.8001 13.2418 4.44192 13.6 4.0001 13.6H2.4001C1.95827 13.6 1.6001 13.2418 1.6001 12.8V8.8Z" />
-                                    <path
-                                        d="M6.3999 5.6C6.3999 5.15818 6.75808 4.8 7.1999 4.8H8.7999C9.24174 4.8 9.5999 5.15818 9.5999 5.6V12.8C9.5999 13.2418 9.24174 13.6 8.7999 13.6H7.1999C6.75808 13.6 6.3999 13.2418 6.3999 12.8V5.6Z" />
-                                    <path
-                                        d="M11.2 3.19999C11.2 2.75817 11.5581 2.39999 12 2.39999H13.6C14.0418 2.39999 14.4 2.75817 14.4 3.19999V12.8C14.4 13.2418 14.0418 13.6 13.6 13.6H12C11.5581 13.6 11.2 13.2418 11.2 12.8V3.19999Z" />
-                                </svg>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="w-100">
-                                        <p class="text-sm text-secondary mb-1">Trung Bình Giao Dịch</p>
-                                        <h4 class="mb-2 font-weight-bold">$450.53</h4>
-                                        <div class="d-flex align-items-center">
-                                            <span class="text-sm text-success font-weight-semibold px-2">
-                                                <i class="fa fa-chevron-up text-xs me-1"></i>22%
-                                            </span>
-                                            <span class="text-sm ms-3">từ $369.30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6">
-                    <div class="card border shadow-xs mb-4">
-                        <div class="card-body text-start p-3 w-100">
-                            <div
-                                class="icon icon-shape icon-sm bg-dark text-white text-center border-radius-sm d-flex align-items-center justify-content-center mb-3">
-                                <svg width="17" height="16" viewBox="0 0 17 16" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M14.6658 7.43432C14.9782 7.74674 14.9782 8.25329 14.6658 8.56569L9.06578 14.1657C8.75338 14.4781 8.24683 14.4781 7.93441 14.1657L2.33441 8.56569C2.17818 8.40945 2.10007 8.20465 2.1001 7.99991V4.00001C2.1001 2.67453 3.17462 1.60001 4.5001 1.60001H8.50034C8.70498 1.60006 8.90962 1.67817 9.06578 1.83432L14.6658 7.43432ZM4.5001 4.80001C4.94192 4.80001 5.3001 4.44183 5.3001 4.00001C5.3001 3.55818 4.94192 3.20001 4.5001 3.20001C4.05827 3.20001 3.7001 3.55818 3.7001 4.00001C3.7001 4.44183 4.05827 4.80001 4.5001 4.80001Z" />
-                                </svg>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="w-100">
-                                        <p class="text-sm text-secondary mb-1">Bán Phiếu Giảm Giá</p>
-                                        <h4 class="mb-2 font-weight-bold">$23,364.55</h4>
-                                        <div class="d-flex align-items-center">
-                                            <span class="text-sm text-success font-weight-semibold px-2">
-                                                <i class="fa fa-chevron-up text-xs me-1"></i>18%
-                                            </span>
-                                            <span class="text-sm ms-3">từ $19,800.40</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="border shadow-xs card">
-                        <div class="pb-0 card-header border-0">
-                            <div class="mb-3 d-sm-flex align-items-center">
-                                <div>
-                                    <h6 class="mb-0 text-lg font-weight-semibold">Số dư tổng quan</h6>
-                                    <p class="mb-2 text-sm mb-sm-0">Ở đây bạn có thông tin chi tiết về số dư.</p>
-                                </div>
-                                <div class="ms-auto d-flex">
-                                    <button type="button" class="mb-0 btn btn-sm btn-white me-2">
-                                        Xem Báo Cáo
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="d-sm-flex align-items-center">
-                                <h3 class="mb-0 font-weight-semibold">$87,982.80</h3>
-                                <span
-                                    class="px-2 border badge badge-sm border-success text-success bg-success border-radius-sm ms-sm-3">
-                                    <svg width="9" height="9" viewBox="0 0 10 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.46967 4.46967C0.176777 4.76256 0.176777 5.23744 0.46967 5.53033C0.762563 5.82322 1.23744 5.82322 1.53033 5.53033L0.46967 4.46967ZM5.53033 1.53033C5.82322 1.23744 5.82322 0.762563 5.53033 0.46967C5.23744 0.176777 4.76256 0.176777 4.46967 0.46967L5.53033 1.53033ZM5.53033 0.46967C5.23744 0.176777 4.76256 0.176777 4.46967 0.46967C4.17678 0.762563 4.17678 1.23744 4.46967 1.53033L5.53033 0.46967ZM8.46967 5.53033C8.76256 5.82322 9.23744 5.82322 9.53033 5.53033C9.82322 5.23744 9.82322 4.76256 9.53033 4.46967L8.46967 5.53033ZM1.53033 5.53033L5.53033 1.53033L4.46967 0.46967L0.46967 4.46967L1.53033 5.53033ZM4.46967 1.53033L8.46967 5.53033L9.53033 4.46967L5.53033 0.46967L4.46967 1.53033Z"
-                                            fill="#67C23A"></path>
-                                    </svg>
-                                    10.5%
-                                </span>
                             </div>
                         </div>
                         <div class="p-3 card-body">
-                            <div class="chart">
-                                <canvas id="chart-line" class="chart-canvas" height="300"></canvas>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="chart w-80">
+                                        <canvas id="pie-chart" class="chart-canvas" height="300"></canvas>
+                                    </div>
+                                </div>
+                                <div class="py-2 my-auto col-6">
+                                    <div class="flex-row mb-1 position-relative d-flex justify-content-between">
+                                        <div class="position-absolute bg-info opacity-1 w-50 h-100"></div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm">/home</h6>
+                                        </div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm align-self-end">52.341</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row mb-1 position-relative d-flex justify-content-between">
+                                        <div class="position-absolute bg-info opacity-1 w-15 h-100"></div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm">/site</h6>
+                                        </div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm align-self-end">10.223</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row mb-1 position-relative d-flex justify-content-between">
+                                        <div class="w-9 position-absolute bg-info opacity-1 h-100"></div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm">/documentation</h6>
+                                        </div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm align-self-end">9.092</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row mb-1 position-relative d-flex justify-content-between">
+                                        <div class="w-8 position-absolute bg-info opacity-1 h-100"></div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm">/docs/components</h6>
+                                        </div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm align-self-end">8.241</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row mb-1 position-relative d-flex justify-content-between">
+                                        <div class="w-7 position-absolute bg-info opacity-1 h-100"></div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm">/signin</h6>
+                                        </div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm align-self-end">6.002</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row mb-1 position-relative d-flex justify-content-between">
+                                        <div class="w-6 position-absolute bg-info opacity-1 h-100"></div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm">/landing</h6>
+                                        </div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm align-self-end">5.706</h6>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row mb-1 position-relative d-flex justify-content-between">
+                                        <div class="w-5 position-absolute bg-info opacity-1 h-100"></div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm">/illustration</h6>
+                                        </div>
+                                        <div class="p-1 px-3 z-index-2">
+                                            <h6 class="mb-0 text-sm align-self-end">5.028</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <div class="mb-0 btn btn-white">See More</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-4 row">
+            <div class="my-4 row">
                 <div class="col-12">
-                    <div class="mb-4 card">
-                        <div class="pb-0 card-header">
-                            <h6>Top Sản Phẩm Bán Chạy</h6>
-                        </div>
-                        <div class="px-0 pt-0 pb-2 card-body">
-                            <div class="p-0 table-responsive">
-                                <table class="table mb-0 align-items-center">
-                                    <thead>
-                                        <tr>
-                                            <th
-                                                class="border-top-0 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                Sản Phẩm</th>
-                                            <th
-                                                class="border-top-0 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                Giá Trị</th>
-                                            <th
-                                                class="text-center border-top-0 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                Lượt Truy Cập</th>
-                                            <th
-                                                class="text-center border-top-0 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                Đánh Giá</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="px-3 py-1 d-flex">
-                                                    <div>
-                                                        <img src="./assets/img/kam-idris-_HqHX3LBN18-unsplash.jpg"
-                                                            class="avatar me-3" alt="image">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Yellow Chair</h6>
-                                                        <p class="mb-0 text-sm font-weight-bold text-secondary"><span
-                                                                class="text-success">2.421</span> đơn đặt hàng</p>
-                                                    </div>
+                    <div class="py-4 border-0 card">
+                        <div class="table-responsive">
+                            <table class="table mb-0 align-items-center">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            class="text-uppercase text-secondary border-top-0 text-xxs font-weight-bolder opacity-7">
+                                            Tên</th>
+                                        <th
+                                            class="text-uppercase text-secondary border-top-0 text-xxs font-weight-bolder opacity-7 ps-2">
+                                            Vai Trò</th>
+                                        <th
+                                            class="text-uppercase text-secondary border-top-0 text-xxs font-weight-bolder opacity-7 ps-2">
+                                            Đánh Giá</th>
+                                        <th
+                                            class="text-uppercase text-secondary border-top-0 text-xxs font-weight-bolder opacity-7">
+                                            Email</th>
+                                        <th
+                                            class="text-uppercase text-secondary border-top-0 text-xxs font-weight-bolder opacity-7">
+                                            Ngày Tạo</th>
+                                        <th
+                                            class="text-uppercase text-secondary border-top-0 text-xxs font-weight-bolder opacity-7">
+                                            Id</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="px-2 py-1 d-flex">
+                                                <div>
+                                                    <img src="./assets/img/bruce-mars.jpg" class="avatar avatar-sm me-3"
+                                                        alt="avatar image">
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <p class="mb-0 text-sm font-weight-bold">$40.600</p>
-                                            </td>
-                                            <td class="text-sm text-center align-middle">
-                                                <p class="mb-0 text-sm font-weight-bold">$9.430</p>
-                                            </td>
-                                            <td class="align-middle text-end">
-                                                <div class="px-3 py-1 d-flex justify-content-center align-items-center">
-                                                    <p class="mb-0 text-sm font-weight-bold">54</p>
-                                                    <i class="mt-1 text-sm ni ni-bold-up ms-1 text-danger"></i>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">John Michael</h6>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="px-3 py-1 d-flex">
-                                                    <div>
-                                                        <img src="./assets/img/spacejoy-NpF_OYE301E-unsplash.jpg"
-                                                            class="avatar me-3" alt="image">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Gray Sofa</h6>
-                                                        <p class="mb-0 text-sm font-weight-bold text-secondary"><span
-                                                                class="text-success">5.921</span> đơn đặt hàng</p>
-                                                    </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="mb-0 text-sm text-secondary">Quản Trị Viên</p>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-dot me-4">
+                                                <i class="bg-info"></i>
+                                                <span class="text-xs text-dark">Tích Cực</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-sm align-middle">
+                                            <p class="mb-0 text-sm text-secondary"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="a9c3c6c1c7e9cadbccc8ddc0dfcc84ddc0c487cac6c4">[email&#160;protected]</a>
+                                            </p>
+                                        </td>
+                                        <td class="px-3 align-middle">
+                                            <span class="text-xs text-secondary font-weight-bold">23/04/18</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="text-sm text-secondary">43431</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="px-2 py-1 d-flex">
+                                                <div>
+                                                    <img src="./assets/img/team-1.jpg" class="avatar avatar-sm me-3"
+                                                        alt="avatar image">
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <p class="mb-0 text-sm font-weight-bold">$91.300</p>
-                                            </td>
-                                            <td class="text-sm text-center align-middle">
-                                                <p class="mb-0 text-sm font-weight-bold">$7.364</p>
-                                            </td>
-                                            <td class="align-middle text-end">
-                                                <div class="px-3 py-1 d-flex justify-content-center align-items-center">
-                                                    <p class="mb-0 text-sm font-weight-bold">5</p>
-                                                    <i class="mt-1 text-sm ni ni-bold-down ms-1 text-danger"></i>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">Alexa Liras</h6>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="px-3 py-1 d-flex">
-                                                    <div>
-                                                        <img src="./assets/img/michael-oxendine-GHCVUtBECuY-unsplash.jpg"
-                                                            class="avatar me-3" alt="image">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Brown Sofa</h6>
-                                                        <p class="mb-0 text-sm font-weight-bold text-secondary"><span
-                                                                class="text-success">921</span> đơn đặt hàng</p>
-                                                    </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="mb-0 text-sm text-secondary">Người Dùng</p>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-dot me-4">
+                                                <i class="bg-info"></i>
+                                                <span class="text-xs text-dark">Tích Cực</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-sm align-middle">
+                                            <p class="mb-0 text-sm text-secondary"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="244548415c456447564145504d524109504d490a474b49">[email&#160;protected]</a>
+                                            </p>
+                                        </td>
+                                        <td class="px-3 align-middle">
+                                            <span class="text-xs text-secondary font-weight-bold">11/01/19</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="text-sm text-secondary">93021</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="px-2 py-1 d-flex">
+                                                <div>
+                                                    <img src="./assets/img/team-6.jpg" class="avatar avatar-sm me-3"
+                                                        alt="avatar image">
                                                 </div>
-                                            </td>
-                                            <td>
-                                                <p class="mb-0 text-sm font-weight-bold">$140.925</p>
-                                            </td>
-                                            <td class="text-sm text-center align-middle">
-                                                <p class="mb-0 text-sm font-weight-bold">$20.531</p>
-                                            </td>
-                                            <td class="align-middle text-end">
-                                                <div class="px-3 py-1 d-flex justify-content-center align-items-center">
-                                                    <p class="mb-0 text-sm font-weight-bold">121</p>
-                                                    <i class="mt-1 text-sm ni ni-bold-up ms-1 text-success"></i>
-                                                    <button type="button"
-                                                        class="mb-0 btn btn-sm btn-icon-only btn-rounded btn-white ms-2 d-flex align-items-center justify-content-center ms-3"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title
-                                                        data-bs-original-title="Refund rate is higher with 70% than other products">
-                                                        <i class="fas fa-info" aria-hidden="true"></i>
-                                                    </button>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">Laurent Perrier</h6>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="mb-0 text-sm text-secondary">Người Dùng</p>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-dot me-4">
+                                                <i class="bg-dark"></i>
+                                                <span class="text-xs text-dark">Bình Thường</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-sm align-middle">
+                                            <p class="mb-0 text-sm text-secondary"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="f39f928681969d87b390819692879a8596de879a9edd909c9e">[email&#160;protected]</a>
+                                            </p>
+                                        </td>
+                                        <td class="px-3 align-middle">
+                                            <span class="text-xs text-secondary font-weight-bold">19/09/17</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="text-sm text-secondary">10392</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="px-2 py-1 d-flex">
+                                                <div>
+                                                    <img src="./assets/img/team-2.jpg" class="avatar avatar-sm me-3"
+                                                        alt="avatar image">
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">Michael Levi</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="mb-0 text-sm text-secondary">Người Dùng</p>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-dot me-4">
+                                                <i class="bg-danger"></i>
+                                                <span class="text-xs text-dark">Tiêu Cực</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-sm align-middle">
+                                            <p class="mb-0 text-sm text-secondary"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="ea878389828b8f86aa89988f8b9e839c8fc79e8387c4898587">[email&#160;protected]</a>
+                                            </p>
+                                        </td>
+                                        <td class="px-3 align-middle">
+                                            <span class="text-xs text-secondary font-weight-bold">24/12/08</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="text-sm text-secondary">34002</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="px-2 py-1 d-flex">
+                                                <div>
+                                                    <img src="./assets/img/team-4.jpg" class="avatar avatar-sm me-3"
+                                                        alt="avatar image">
+                                                </div>
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">Richard Gran</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="mb-0 text-sm text-secondary">Quản Trị Viên</p>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-dot me-4">
+                                                <i class="bg-info"></i>
+                                                <span class="text-xs text-dark">Tích Cực</span>
+                                            </span>
+                                        </td>
+                                        <td class="text-sm align-middle">
+                                            <p class="mb-0 text-sm text-secondary"><a href="/cdn-cgi/l/email-protection"
+                                                    class="__cf_email__"
+                                                    data-cfemail="295b404a41485b4d694a5b4c485d405f4c045d4044074a4644">[email&#160;protected]</a>
+                                            </p>
+                                        </td>
+                                        <td class="px-3 align-middle">
+                                            <span class="text-xs text-secondary font-weight-bold">04/10/21</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="text-sm text-secondary">91879</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -2024,6 +1741,8 @@
                         <div class="copyright text-center text-xs text-muted text-lg-start">
                             Copyright
                             ©
+                            <script data-cfasync="false"
+                                src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
@@ -2159,49 +1878,26 @@
     <script src="./assets/js/core/bootstrap.min.js"></script>
     <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
-
-    <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
-    <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
     <script src="./assets/js/plugins/chartjs.min.js"></script>
-    <script src="./assets/js/plugins/swiper-bundle.min.js" type="text/javascript"></script>
     <script>
-        if (document.getElementsByClassName('mySwiper')) {
-            var swiper = new Swiper(".mySwiper", {
-                effect: "cards",
-                grabCursor: true,
-                initialSlide: 1,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        };
+        // Pie chart
+        var ctx4 = document.getElementById("pie-chart").getContext("2d");
 
-        var ctx = document.getElementById("chart-bars").getContext("2d");
-
-        new Chart(ctx, {
-            type: "bar",
+        new Chart(ctx4, {
+            type: "pie",
             data: {
-                labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+                labels: ['/home', '/site', '/documentation', '/docs/components'],
                 datasets: [{
-                    label: "Sales",
-                    tension: 0.4,
-                    borderWidth: 0,
-                    borderSkipped: false,
-                    backgroundColor: "#55A6F8",
-                    data: [450, 200, 100, 220, 500, 100, 400, 230, 500, 200],
-                    maxBarThickness: 6
-                },
-                {
-                    label: "Sales",
-                    tension: 0.4,
-                    borderWidth: 0,
-                    borderSkipped: false,
-                    backgroundColor: "#774DD3",
-                    data: [200, 300, 200, 420, 400, 200, 300, 430, 400, 300],
-                    maxBarThickness: 6
-                },
-                ],
+                    label: "Projects",
+                    weight: 9,
+                    cutout: 0,
+                    tension: 0.9,
+                    pointRadius: 2,
+                    borderWidth: 0.5,
+                    backgroundColor: ['#165DFF', '#5B8DFF', '#A3BFFF'],
+                    data: [75, 18, 7],
+                    fill: false
+                }],
             },
             options: {
                 responsive: true,
@@ -2209,14 +1905,6 @@
                 plugins: {
                     legend: {
                         display: false,
-                    },
-                    tooltip: {
-                        backgroundColor: '#fff',
-                        titleColor: '#1e293b',
-                        bodyColor: '#1e293b',
-                        borderColor: '#e9ecef',
-                        borderWidth: 1,
-                        usePointStyle: true
                     }
                 },
                 interaction: {
@@ -2225,138 +1913,67 @@
                 },
                 scales: {
                     y: {
-                        stacked: true,
-                        grid: {
-                            drawBorder: false,
-                            display: true,
-                            drawOnChartArea: true,
-                            drawTicks: false,
-                            borderDash: [4, 4],
-                        },
-                        ticks: {
-                            beginAtZero: true,
-                            padding: 10,
-                            font: {
-                                size: 12,
-                                family: "Noto Sans",
-                                style: 'normal',
-                                lineHeight: 2
-                            },
-                            color: "#64748B"
-                        },
-                    },
-                    x: {
-                        stacked: true,
                         grid: {
                             drawBorder: false,
                             display: false,
                             drawOnChartArea: false,
-                            drawTicks: false
+                            drawTicks: false,
                         },
                         ticks: {
-                            font: {
-                                size: 12,
-                                family: "Noto Sans",
-                                style: 'normal',
-                                lineHeight: 2
-                            },
-                            color: "#64748B"
+                            display: false
+                        }
+                    },
+                    x: {
+                        grid: {
+                            drawBorder: false,
+                            display: false,
+                            drawOnChartArea: false,
+                            drawTicks: false,
                         },
+                        ticks: {
+                            display: false,
+                        }
                     },
                 },
             },
         });
 
+        // Bar chart
+        var ctx5 = document.getElementById("bar-chart").getContext("2d");
 
-        var ctx2 = document.getElementById("chart-line").getContext("2d");
-
-        var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
-
-        gradientStroke1.addColorStop(1, 'rgba(85, 166, 248, 0.1)');
-        gradientStroke1.addColorStop(0, 'rgba(21, 137, 255, 0.0001)');
-
-        var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
-        gradientStroke2.addColorStop(1, 'rgba(22, 93, 255, 0.2)');
-        gradientStroke2.addColorStop(0, 'rgba(22, 93, 255, 0.0001)');
-
-        new Chart(ctx2, {
-            type: "line",
+        new Chart(ctx5, {
+            type: "bar",
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                labels: ['Google', 'Facebook', 'Twitter', 'TikTok', 'Instagram'],
                 datasets: [{
-                    label: "Organic Search",
-                    tension: 0.4,
+                    label: "Percentage",
+                    weight: 5,
                     borderWidth: 0,
-                    pointRadius: 2,
-                    pointBackgroundColor: "#55A6F8",
-                    borderColor: "#55A6F8",
-                    borderWidth: 3,
-                    backgroundColor: gradientStroke1,
-                    fill: true,
-                    data: [340, 550, 350, 750, 650, 250, 500, 150, 600, 550, 400, 950],
-                    maxBarThickness: 6
-                },
-                {
-                    label: "Referral",
-                    tension: 0.4,
-                    borderWidth: 0,
-                    pointRadius: 2,
-                    pointBackgroundColor: "#774DD3",
-                    borderColor: "#774DD3",
-                    borderWidth: 3,
-                    backgroundColor: gradientStroke2,
-                    fill: true,
-                    data: [100, 500, 200, 550, 250, 500, 250, 750, 400, 650, 250, 750],
-                    maxBarThickness: 6
-                }
-                ],
+                    borderRadius: 4,
+                    backgroundColor: ['#165DFF', '#4878FF', '#7197FE', '#9AB3FF', '#C2D1FC'],
+                    data: [44.45, 20.25, 14.45, 10.45, 9.03],
+                    fill: false,
+                    maxBarThickness: 60
+                }],
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
                     legend: {
-                        display: true,
-                        position: 'top',
-                        align: 'end',
-                        labels: {
-                            boxWidth: 6,
-                            boxHeight: 6,
-                            padding: 20,
-                            pointStyle: 'circle',
-                            borderRadius: 50,
-                            usePointStyle: true,
-                            font: {
-                                weight: 600,
-                            },
-                        },
-                        tooltip: {
-                            backgroundColor: '#fff',
-                            titleColor: '#1e293b',
-                            bodyColor: '#1e293b',
-                            borderColor: '#e9ecef',
-                            borderWidth: 1,
-                            pointRadius: 2,
-                            usePointStyle: true,
-                            boxWidth: 8,
-                        }
+                        display: false,
                     }
-                },
-                interaction: {
-                    intersect: false,
-                    mode: 'index',
                 },
                 scales: {
                     y: {
                         grid: {
-                            drawBorder: true,
-                            display: true,
+                            drawBorder: false,
+                            display: false,
                             drawOnChartArea: true,
                             drawTicks: false,
-                            borderDash: [5, 5]
                         },
                         ticks: {
-                            display: true,
+                            display: false,
                             padding: 10,
                             color: '#9ca2b7'
                         }
@@ -2364,10 +1981,9 @@
                     x: {
                         grid: {
                             drawBorder: false,
-                            display: true,
+                            display: false,
                             drawOnChartArea: true,
                             drawTicks: true,
-                            borderDash: [5, 5]
                         },
                         ticks: {
                             display: true,
@@ -2378,211 +1994,10 @@
                 },
             },
         });
-
-        // new Chart(ctx2, {
-        //   plugins: [{
-        //     beforeInit(chart) {
-        //       const originalFit = chart.legend.fit;
-        //       chart.legend.fit = function fit() {
-        //         originalFit.bind(chart.legend)();
-        //         this.height += 40;
-        //       }
-        //     },
-        //   }],
-        //   type: "line",
-        //   data: {
-        //     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
-        //     datasets: [{
-        //         label: "Volume",
-        //         tension: 0,
-        //         borderWidth: 2,
-        //         pointRadius: 3,
-        //         borderColor: "#2ca8ff",
-        //         pointBorderColor: '#2ca8ff',
-        //         pointBackgroundColor: '#2ca8ff',
-        //         backgroundColor: gradientStroke1,
-        //         fill: true,
-        //         data: [2828, 1291, 3360, 3223, 1630, 980, 2059, 3092, 1831, 1842, 1902, 1478, 1123, 2444, 2636, 2593, 2885, 1764, 898, 1356, 2573, 3382, 2858, 4228],
-        //         maxBarThickness: 6
-
-        //       },
-        //       {
-        //         label: "Trade",
-        //         tension: 0,
-        //         borderWidth: 2,
-        //         pointRadius: 3,
-        //         borderColor: "#832bf9",
-        //         pointBorderColor: '#832bf9',
-        //         pointBackgroundColor: '#832bf9',
-        //         backgroundColor: gradientStroke2,
-        //         fill: true,
-        //         data: [2797, 2182, 1069, 2098, 3309, 3881, 2059, 3239, 6215, 2185, 2115, 5430, 4648, 2444, 2161, 3018, 1153, 1068, 2192, 1152, 2129, 1396, 2067, 1215, 712, 2462, 1669, 2360, 2787, 861],
-        //         maxBarThickness: 6
-        //       },
-        //     ],
-        //   },
-        //   options: {
-        //     responsive: true,
-        //     maintainAspectRatio: false,
-        //     plugins: {
-        //       legend: {
-        //         display: true,
-        //         position: 'top',
-        //         align: 'end',
-        //         labels: {
-        //           boxWidth: 6,
-        //           boxHeight: 6,
-        //           padding: 20,
-        //           pointStyle: 'circle',
-        //           borderRadius: 50,
-        //           usePointStyle: true,
-        //           font: {
-        //             weight: 400,
-        //           },
-        //         },
-        //       },
-        //       tooltip: {
-        //         backgroundColor: '#fff',
-        //         titleColor: '#1e293b',
-        //         bodyColor: '#1e293b',
-        //         borderColor: '#e9ecef',
-        //         borderWidth: 1,
-        //         pointRadius: 2,
-        //         usePointStyle: true,
-        //         boxWidth: 8,
-        //       }
-        //     },
-        //     interaction: {
-        //       intersect: false,
-        //       mode: 'index',
-        //     },
-        //     scales: {
-        //       y: {
-        //         grid: {
-        //           drawBorder: false,
-        //           display: true,
-        //           drawOnChartArea: true,
-        //           drawTicks: false,
-        //           borderDash: [4, 4]
-        //         },
-        //         ticks: {
-        //           callback: function (value, index, ticks) {
-        //             return parseInt(value).toLocaleString() ;
-        //           },
-        //           display: true,
-        //           padding: 10,
-        //           color: '#b2b9bf',
-        //           font: {
-        //             size: 12,
-        //             family: "Noto Sans",
-        //             style: 'normal',
-        //             lineHeight: 2
-        //           },
-        //           color: "#64748B"
-        //         }
-        //       },
-        //       x: {
-        //         grid: {
-        //           drawBorder: false,
-        //           display: false,
-        //           drawOnChartArea: false,
-        //           drawTicks: false,
-        //           borderDash: [4, 4]
-        //         },
-        //         ticks: {
-        //           display: true,
-        //           color: '#b2b9bf',
-        //           padding: 20,
-        //           font: {
-        //             size: 12,
-        //             family: "Noto Sans",
-        //             style: 'normal',
-        //             lineHeight: 2
-        //           },
-        //           color: "#64748B"
-        //         }
-        //       },
-        //     },
-        //   },
-        // });
-
-
-        // new Chart(ctx2, {
-        //   type: "line",
-        //   data: {
-        //     labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        //     datasets: [
-        //       {
-        //         label: "eGold",
-        //         tension: 0.4,
-        //         borderWidth: 0,
-        //         pointRadius: 0,
-        //         borderColor: "#3A416F",
-        //         borderWidth: 3,
-        //         backgroundColor: gradientStroke2,
-        //         fill: true,
-        //         data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
-        //         maxBarThickness: 6
-        //       },
-        //     ],
-        //   },
-        //   options: {
-        //     responsive: true,
-        //     maintainAspectRatio: false,
-        //     plugins: {
-        //       legend: {
-        //         display: false,
-        //       }
-        //     },
-        //     interaction: {
-        //       intersect: false,
-        //       mode: 'index',
-        //     },
-        //     scales: {
-        //       y: {
-        //           grid: {
-        //           drawBorder: false,
-        //           display: true,
-        //           drawOnChartArea: true,
-        //           drawTicks: false,
-        //           borderDash: [5, 5]
-        //         },
-        //         ticks: {
-        //           display: true,
-        //           padding: 10,
-        //           color: '#b2b9bf',
-        //           font: {
-        //             size: 11,
-        //             family: "Open Sans",
-        //             style: 'normal',
-        //             lineHeight: 2
-        //           },
-        //         }
-        //       },
-        //       x: {
-        //           grid: {
-        //           drawBorder: false,
-        //           display: false,
-        //           drawOnChartArea: false,
-        //           drawTicks: false,
-        //           borderDash: [5, 5]
-        //         },
-        //         ticks: {
-        //           display: true,
-        //           color: '#b2b9bf',
-        //           padding: 20,
-        //           font: {
-        //             size: 11,
-        //             family: "Open Sans",
-        //             style: 'normal',
-        //             lineHeight: 2
-        //           },
-        //         }
-        //       },
-        //     },
-        //   },
-        // });
     </script>
+
+    <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+    <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -2599,7 +2014,7 @@
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
         integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-        data-cf-beacon='{"rayId":"823d09f3195810a8","version":"2023.10.0","token":"1b7cbb72744b40c580f8633c6b62637e"}'
+        data-cf-beacon='{"rayId":"823ccdb1dfea10a8","version":"2023.10.0","token":"1b7cbb72744b40c580f8633c6b62637e"}'
         crossorigin="anonymous"></script>
 </body>
 
